@@ -1,0 +1,42 @@
+#calender{
+    width: 300px;
+    height: 300px;
+    background-color: rgb(119, 149, 182);
+    margin: 100px auto;
+}
+
+#calender .head{
+    display: flex;
+    width: 100%;
+    height: 20px;
+    background-color: chartreuse;
+   align-items: center;
+  justify-content: space-between;
+}
+#calender .body{
+    width: 100%;
+    background-color: crimson;
+    height: calc(100% - 20px);
+
+}
+#calender .body table{
+    width: 100%;
+    text-align: center;
+    background-color: gold;
+}
+#calender .body table thead{
+    width: 100%;
+
+}
+#calender .body table thead tr{
+    background-color: slategray;
+}
+
+#calender .body table thead tr th{
+    background-color: coral;
+  
+}
+.active{
+    background-color: blue;
+    color: white;
+}
