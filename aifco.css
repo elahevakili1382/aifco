@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'IRANSansWeb_Medium';
+    src: url(fonts/converted-fonts/IRANSansWeb_Medium.eot);
+    src: url(fonts/converted-fonts/IRANSansWeb_Medium.eot?#iefix) format('embedded-opentype'),
+         url(fonts/converted-fonts/IRANSansWeb_Medium.otf) format('otf'),
+         url(fonts/converted-fonts/IRANSansWeb_Medium.svg#IRANSansWeb_Medium) format('svg'),
+         url(fonts/converted-fonts/IRANSansWeb_Medium.ttf) format('truetype'),
+         url(fonts/converted-fonts/IRANSansWeb_Medium.woff) format('woff'),
+         url(fonts/converted-fonts/IRANSansWeb_Medium.woff2) format('woff2');
+  }
+  
+body,html{
+    background-color: rgb(245, 248, 251);
+    height: 100%;
+    overflow-x: hidden;
+    font-family: 'IRANSansWeb_Medium';
+}
+nav{
+    direction: rtl;
+}
+nav>div>a>img{
+    width: 120px;
+    height: 90px;
+}
+
+.iran{
+    width: 40px;
+    height: 40px;
+}
+
+
+
+
+  
+  /* Ensure the navigation bar sits on top of the slider */
+  .navbar {
+    position: relative; /* Change to absolute if needed */
+    z-index: 2; /* Higher than the slider */
+    width: 100%; /* Full width */
+  }
+  
+  /* Additional styles for the rest of the page */
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+
+  .swiper-container{
+    height: 100vh;
+    position: relative;
+        z-index: 1;
+  }
+  
+  .swiper-slide img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+
+  .custom-login{
+    background-color: #071437;
+    color: white;
+    border-radius: 10px;
+  }
+
+
+
+  .btn2-login{
+    color: #071437;
+    background-color: #D8DFE9;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+
+
+  }
+
+ 
+
+  .aifco-text{
+    color: #800901 ;
+    margin-bottom: 40px;
+    font-weight: bold;
+  }
+
+
+  .card-section{
+    min-height: calc(100vh - 10px);
+  }
+
+  .card-head{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+    direction: rtl;
+  }
+
+  .card-body h3{
+    font-size: 32px;
+    font-weight: bolder;
+  }
+
+  .card-head button{
+    padding: 12px 20px;
+    background-color: #800901;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    outline: none;
+  }
+
+  .experience {
+    background-image: url('images/bg-3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 50px 0;
+    overflow: hidden;
+    min-height: 100vh; /* Ensure the experience section is always at least the full height of the viewport */
+
+}
+
+.innerexperience-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url(images/borderd-bg.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 50px 0px;
+    border-radius: 10px;
+    gap: 20px; /* Optional: Rounded corners for each inner div */
+}
+
+.innerexperience-div img {
+    max-width: 100px; /* Adjust size as needed */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.innerexperience-div p {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #800901;
+}
+
+.innerexperience-div span {
+    font-size: 24px;
+    color: #800901; /* Adjust color as needed */
+}
+
+.footer{
+  direction: rtl;
+}
+
+.footer a{
+  text-decoration: none;
+  color:#f1416c;
+  font-size: 15px;
+}
+
+.footer .calender{
+  color:#58595D ;
+}
+
+/* First Slider Styles (as before) */
+.slider-one {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-one .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.slider-one .overlay-content {
+  position: absolute;
+  top: 300px;
+  left: 40%;
+  transform: translateX(-50%);
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.slider-one .overlay-content a{
+  text-decoration: none;
+  color: white;
+}
+
+
+
+.offcanvas-w{
+  width:170px ;
+}
+/* Second Slider Styles */
+
+.mySwiper2 img{
+  width: 250px;
+  height: auto;
+  
+}
+
+.mySwiper2 .swiper-slide{
+  gap: 5px;
+  display: flex;
+  align-items: center;
+
+}

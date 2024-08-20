@@ -1,0 +1,247 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+
+
+:root{
+    --background:#90e0ef;
+    --secondaryBackground:#2c32696c;
+    --text: #fff;
+    --purple:#828dff;
+    --teal:#24feee;
+}
+
+body{
+    background-color: #a8dadc;
+    color: var(--text);
+    font-family: 'Dashicons'
+}
+
+.container{
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 120px auto 0 auto;
+    max-width: 600px;
+    background-color: white;
+    box-shadow: #828dff;
+    padding: 25px;
+    height: auto;
+}
+
+.stats-container{
+    background-color:#cbf3f0;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    border-radius: 20px;
+    border: 6px solid var(--purple);
+    
+    gap: 50px;
+    width: 100%;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.details{
+    width: 100%;
+
+}
+
+.details p {
+    margin-top: 8px;
+    font-size: 20px;
+    color: #000000;
+}
+
+.details-h1{
+    color: #000000;
+}
+
+#progressBar{
+    width: 100%;
+    height: 10px;
+    background-color:white;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#progress{
+    width: 0;
+    height: 10px;
+    background-color: #fb8500;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+#numbers{
+    width: 100px;
+    height: 100px;
+    background-color: var(--purple);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 50%;
+    color: black;
+
+}
+#newTask{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    outline: none;
+    text-decoration: none;
+    background-color: #828dff;
+}
+form{
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+input{
+    flex: 1;
+    background-color: #c8e7ff;
+    border: 2px solid var(--purple);
+    border-radius: 20px;
+    padding: 16px;
+    color: black;
+    outline: none;
+    font-size: 20px;
+}
+
+button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 25px;
+    color: var(--text);
+    outline: none;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: var(--purple);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+}
+
+#task-list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+    width: 100%;
+    list-style: none;
+}
+
+.taskItem{
+    width: 100%;
+    background-color:rgba(201, 215, 223, 0.378);
+    border: 1px solid var(--purple);
+    padding: 20px;
+    border-radius: 30px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    margin-bottom: 10px;
+    /* background: #e8e8e8; */
+   
+}
+
+
+
+
+
+.task{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.task input{
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: 1px solid #272d33;
+    appearance: unset;
+    outline: none;
+
+
+}
+
+.task .checkbox:checked{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    background-color: #3ecd5f;
+    object-fit: cover;
+    outline: none;
+
+}
+
+.task .checkbox:checked::before{
+    font-family: bootstrap-icons !important;
+    font-weight: 400 !important;
+    content: "\F26E";
+    color:rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+ font-weight: 600;
+    border-radius: 100%;
+    outline: none;
+
+ 
+
+}
+
+
+
+
+.taskItem i{
+    font-size: 30px;
+    font-weight: bolder;
+    margin: 0 10px;
+    cursor: pointer;
+    text-decoration: none;
+    list-style: none;
+    background-color: transparent;
+    color:var(--purple);
+   
+}
+
+
+
+.completed p{
+    text-decoration: line-through;
+    color:#fb8500;
+    font-size: 20px;
+}
+
+.icons .deletebtn{
+background-color: transparent;
+}
+
+/* This only changes this particular animation duration */
+.animate__animated.animate__rotateOutDownRight {
+    --animate-duration: 2s;
+  }
+  
+  /* This changes all the animations globally */
+  :root {
+    --animate-duration: 800ms;
+    --animate-delay: 0.9s;
+  } 
+
+ 

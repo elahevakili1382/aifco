@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculator</title>
+    <link rel="stylesheet" href="calculator.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculator">
+        <form>
+          <div class="display">
+            <input type="text" name="display" id="display" />
+          </div>
+
+          <div class="backspace">
+            <button
+              type="button"
+              onclick="document.querySelector('#display').value = document.querySelector('#display').value.slice(0,-1)"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="32"
+                height="32"
+                fill="rgba(95,174,213,1)"
+              >
+                <path d="M6 3L18 3L18 21L6 21L2 12Z"></path>
+                <line
+                  x1="9"
+                  y1="9"
+                  x2="15"
+                  y2="15"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+                <line
+                  x1="15"
+                  y1="9"
+                  x2="9"
+                  y2="15"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <div class="firstdiv">
+            <input
+              id="C"
+              type="button"
+              value="C"
+              onclick="document.querySelector('#display').value = '' "
+            />
+            <input
+              type="button"
+              value="()"
+              onclick="document.querySelector('#display').value += '()'"
+            />
+            <input
+              type="button"
+              value="%"
+              onclick="document.querySelector('#display').value += '%' "
+            />
+            <input
+              type="button"
+              value="/"
+              onclick="document.querySelector('#display').value += '/' "
+            />
+          </div>
+
+          <div>
+            <input
+              type="button"
+              value="7"
+              onclick="document.querySelector('#display').value += '7' "
+            />
+            <input
+              type="button"
+              value="8"
+              onclick="document.querySelector('#display').value += '8' "
+            />
+            <input
+              type="button"
+              value="9"
+              onclick="document.querySelector('#display').value += '9' "
+            />
+            <input
+              type="button"
+              value="*"
+              onclick="document.querySelector('#display').value += '*' "
+            />
+          </div>
+
+          <div>
+            <input
+              type="button"
+              value="4"
+              onclick="document.querySelector('#display').value += '4' "
+            />
+            <input
+              type="button"
+              value="5"
+              onclick="document.querySelector('#display').value += '5' "
+            />
+            <input
+              type="button"
+              value="6"
+              onclick="document.querySelector('#display').value += '6' "
+            />
+            <input
+              type="button"
+              value="-"
+              onclick="document.querySelector('#display').value += '-' "
+            />
+          </div>
+
+          <div>
+            <input
+              type="button"
+              value="1"
+              onclick="document.querySelector('#display').value += '1' "
+            />
+            <input
+              type="button"
+              value="2"
+              onclick="document.querySelector('#display').value += '2' "
+            />
+            <input
+              type="button"
+              value="3"
+              onclick="document.querySelector('#display').value += '3' "
+            />
+            <input
+              type="button"
+              value="+"
+              onclick="document.querySelector('#display').value += '+' "
+            />
+          </div>
+
+          <div>
+            <input
+              type="button"
+              value="00"
+              onclick="document.querySelector('#display').value += '00' "
+            />
+            <input
+              type="button"
+              value="0"
+              onclick="document.querySelector('#display').value += '0' "
+            />
+            <input
+              type="button"
+              value="."
+              onclick="document.querySelector('#display').value += '.' "
+            />
+
+            <input
+              type="button"
+              value="="
+              onclick="document.querySelector('#display').value = eval(document.querySelector('#display').value) "
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="calculator.js"></script>
+  </body>
+</html>
